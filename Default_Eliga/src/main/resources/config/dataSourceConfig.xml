@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	
+	<comment>DATABASE SYSTEM CONFIG</comment>
+	
+	<entry key="db.driver">com.mysql.jdbc.Driver</entry>
+	<entry key="db.url">jdbc:mysql://127.0.0.1:3306/test</entry>
+	<entry key="db.username">root</entry>
+	<entry key="db.password">root</entry>
+	
+</properties>
