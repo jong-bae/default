@@ -7,11 +7,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sqisoft.eliga.sample.service.SampleService;
+import com.sqisoft.eliga.sample.vo.request.SampleAjaxRequestVO;
 import com.sqisoft.eliga.sample.vo.request.SampleDataRequestVO;
+import com.sqisoft.eliga.sample.vo.response.SampleResponseVO;
 
 /**
  * 
@@ -71,5 +75,20 @@ public class SampleController {
 	public String sampleTable(Model model, HttpServletRequest request, @ModelAttribute SampleDataRequestVO param) {
 		model.addAttribute("data", sampleService.getSampleData(param));
 		return "sample/tables";
+	}
+	
+	/**
+	 * 
+	 * @name ajaxTest
+	 * @description 
+	 * @param 
+	 * @return SampleResponseVO
+	 * @author JB
+	 * @since 2016. 7. 15.
+	 */
+	@RequestMapping(value="/ajaxTest", method=RequestMethod.POST)
+	public @ResponseBody SampleResponseVO ajaxTest(HttpServletRequest request, @RequestBody SampleAjaxRequestVO param) {
+		SampleResponseVO result = sampleService.getSample();
+		return result;
 	}
 }
