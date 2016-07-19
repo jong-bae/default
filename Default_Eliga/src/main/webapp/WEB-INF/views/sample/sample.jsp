@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <script src="${pageContext.request.contextPath}/resources/js/custom/utils.js"></script>
 
 	<h1>
-		Hello world!  
+		Hello world! <spring:message code="sqi.common.title"/> 
 	</h1>
 	
 	<P>  The time on the server is ${serverTime} </P>

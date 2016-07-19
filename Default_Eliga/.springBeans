@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/spring/context-servlet.xml</config>
 		<config>src/main/resources/spring/context-task.xml</config>
+		<config>src/main/resources/spring/context-locale.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/resources/spring/context-transaction.xml</config>
