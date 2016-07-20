@@ -7,7 +7,7 @@
 $.extend( {
 	
 	sqiAjaxPostJson : function(url, jsonParam, callback, errCallback) {
-		
+		// @RequestBody
 		var ajaxConfig = {
 				url : url,
 				type : 'POST',
@@ -27,7 +27,7 @@ $.extend( {
 	},
 
 	sqiAjaxGetJson : function(url, jsonParam, callback, errCallback) {
-		
+		// @ModelAttribute
 		var ajaxConfig = {
 				url : url,
 				type : 'GET',

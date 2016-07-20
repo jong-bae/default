@@ -3,7 +3,7 @@
 <script src="${pageContext.request.contextPath}/resources/js/custom/utils.js"></script>
 
 	<h1>
-		Hello world! <spring:message code="sqi.common.title"/> 
+		Hello world! <spring:message code="jb.common.title"/> 
 	</h1>
 	
 	<P>  The time on the server is ${serverTime} </P>
