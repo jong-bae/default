@@ -17,7 +17,7 @@
 	$(function() {
 		$('#btn-refresh').click(function() {
 			obj.data = 'testdata';
-			$.sqiAjaxPostJson('${pageContext.request.contextPath}/ajaxTest', obj,
+			$.jbAjaxPostJson('${pageContext.request.contextPath}/ajaxTest', obj,
 					function(result) {
 						$('#p-tag').text('The time on the server is ' + result.today);
 					},

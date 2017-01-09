@@ -6,7 +6,7 @@
 
 $.extend( {
 	
-	sqiAjaxPostJson : function(url, jsonParam, callback, errCallback) {
+	jbAjaxPostJson : function(url, jsonParam, callback, errCallback) {
 		// @RequestBody
 		var ajaxConfig = {
 				url : url,
@@ -28,7 +28,7 @@ $.extend( {
 		});
 	},
 
-	sqiAjaxGetJson : function(url, jsonParam, callback, errCallback) {
+	jbAjaxGetJson : function(url, jsonParam, callback, errCallback) {
 		// @ModelAttribute
 		var ajaxConfig = {
 				url : url,
@@ -49,7 +49,7 @@ $.extend( {
 		});
 	},
 	
-	sqiSetResponseBody : function(formSerializeArray) {
+	jbSetResponseBody : function(formSerializeArray) {
 		var obj = {};
 		$.each(formSerializeArray, function(idx, data){
 			obj[data.name] = data.value;
@@ -58,7 +58,7 @@ $.extend( {
 		return obj;
 	},
 	
-	sqiSetEliga : function(formSerializeArray) {
+	jbSetEliga : function(formSerializeArray) {
 		var obj = {};
 		var weeks = "";
 		var exceptDay = "";

@@ -41,7 +41,7 @@ public class SampleController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String sample(Model model, HttpServletRequest request) {
 		model.addAttribute("serverTime", sampleService.getSample().getToday());
-		model.addAttribute("serverTime2", sampleService.getLombok().getToday());
+//		model.addAttribute("serverTime2", sampleService.getLombok().getToday());
 		return "sample/sample";
 	}
 	
